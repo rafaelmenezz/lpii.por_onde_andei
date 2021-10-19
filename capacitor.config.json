@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "por_onde_andei",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}

@@ -1,4 +1,4 @@
-import { LocReverso } from '@/config/LocReverso'
+import { LocReverso } from '@/config/locReverso'
 
 export class Localizacao {
    private _latitude: number

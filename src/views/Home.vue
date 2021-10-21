@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+
 <template>
   <ion-page>
     <ion-header :translucent="true">
@@ -83,7 +83,7 @@ import { Storage } from "@ionic/storage";
 import Local from "@/views/Local.vue";
 import { Localizacao } from "@/model/localizacao";
 import { Geolocation } from "@capacitor/geolocation";
-import { LocReverso } from "@/config/LocReverso";
+import { LocReverso } from "@/config/locReverso";
 
 export default defineComponent({
   name: "Home",

@@ -4,7 +4,7 @@
           <ion-col size="12">
             <ion-card>
               <ion-card-header>
-                <ion-card-title>{{cidade}}</ion-card-title>
+                <ion-card-title>{{ cidade }}</ion-card-title>
               </ion-card-header>
 
               <ion-card-content>
@@ -37,9 +37,6 @@ export default defineComponent({
     IonCardHeader,
     IonCardTitle,
     IonCardContent,
-  },
-  ionViewWillEnter() {
-    this.buscarCidade();
   },
 
   props: {

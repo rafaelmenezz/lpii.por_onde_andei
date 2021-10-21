@@ -83,7 +83,7 @@ import { Storage } from "@ionic/storage";
 import Local from "@/views/Local.vue";
 import { Localizacao } from "@/model/localizacao";
 import { Geolocation } from "@capacitor/geolocation";
-import { LocReverso } from "@/config/locReverso";
+import { LocReverso } from "@/config/LocReverso";
 
 export default defineComponent({
   name: "Home",
@@ -129,10 +129,12 @@ export default defineComponent({
       this.long = coordinates.coords.longitude;
     },
     async salvarLocalizacao() {
-      this.local = await new Localizacao(
+      this.local = new Localizacao(
         parseFloat(this.lat),
         parseFloat(this.long)
-      ).buscarCidade();
+      );
+      await this.local.buscarCidade();
+
       this.list.push(this.local);
       this.salvarStorage();
 

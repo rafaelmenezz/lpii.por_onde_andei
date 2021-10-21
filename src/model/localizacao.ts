@@ -1,4 +1,4 @@
-import { LocReverso } from '@/config/locReverso'
+import { LocReverso } from '@/config/LocReverso'
 
 export class Localizacao {
    private _latitude: number
@@ -22,12 +22,12 @@ export class Localizacao {
       this._cidade = text.resposta
       console.log(this._cidade)
    }
-   // set cidade(cidade: string) {
-   //    this._cidade = cidade
-   // }
-   // public get cidade() {
-   //    return this._cidade
-   // }
+   set cidade(cidade: string) {
+      this._cidade = cidade
+   }
+   get cidade() {
+      return this._cidade
+   }
 
    public set latitude(latitude: number) {
       this._latitude = latitude
